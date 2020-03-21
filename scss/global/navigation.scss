@@ -1,0 +1,18 @@
+.Navigation {
+  height: 50px;
+  background-color: #f1f6ff;
+  .container {
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &-item {
+    margin-right: 15px;
+    color: #98afd1;
+    font-size: $font-size-small;
+    &:hover {
+      color: $color-bold-blue;
+    }
+  }
+}

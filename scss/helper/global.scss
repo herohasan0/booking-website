@@ -1,0 +1,159 @@
+body {
+  font-size: 16px;
+  font-family: $font-family;
+  height: 2000px;
+}
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+button,
+label,
+small {
+  user-select: none;
+  outline: 0;
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: $color-navy;
+}
+
+.text {
+  appearance: none;
+  min-width: 100%;
+  min-height: $finger-size;
+  border: 0;
+  border-radius: $border-radius;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  @include mq('tablet') {
+  }
+}
+
+.select {
+  position: relative;
+  color: $color-navy;
+  select {
+    appearance: none;
+    background-color: white;
+
+    border: 0;
+    width: 100%;
+    height: $finger-size;
+  }
+}
+
+.form-item {
+  position: relative;
+  &-icon {
+    pointer-events: none;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-navy;
+  }
+  .text {
+    padding-left: 40px;
+  }
+  .select select {
+    padding-left: 40px;
+  }
+}
+
+a {
+  color: $color-navy;
+}
+
+small {
+  color: white;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: $finger-size;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: $finger-size;
+  color: white;
+  font-weight: bold;
+  border-radius: $border-radius;
+  background-color: transparent;
+
+  &-icon {
+    justify-content: center;
+    color: black;
+    padding-left: 0;
+    padding-right: 0;
+    width: $finger-size;
+  }
+  &-blue {
+    color: white;
+    background-color: $color-blue;
+  }
+  &-full {
+    width: 100%;
+    background-color: $color-navy;
+    @include mq('tablet') {
+    }
+  }
+}
+
+.form-checkbox {
+  display: flex;
+}
+
+.for-work {
+  margin-bottom: 10px;
+  @include mq('tablet') {
+    position: absolute;
+    top: $finger-size;
+  }
+}
+
+.checkbox {
+  display: flex;
+  position: relative;
+  right: 0;
+  pointer-events: none;
+  input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  &:before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    border: 2px solid rgba(255, 255, 255, 0.801);
+  }
+
+  .icon {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 3px;
+    margin-top: -2px;
+  }
+  input:checked + .icon {
+    display: block;
+  }
+}

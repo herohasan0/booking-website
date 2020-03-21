@@ -1,0 +1,120 @@
+.Header {
+  height: 64px;
+
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &-logo {
+    img {
+      width: 144px;
+    }
+  }
+  &-switch {
+    z-index: 1;
+    position: relative;
+    left: 10px;
+    margin-left: auto;
+    @include mq {
+      display: none;
+    }
+  }
+  &-menu {
+    z-index: 1;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 50px);
+    transition: 0.2s;
+    opacity: 0;
+    display: flex;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    padding-bottom: 20px;
+    flex-direction: column;
+    box-shadow: 0 30px 30px rgba(black, 0.1);
+    background-color: white;
+
+    .Header.menu-show & {
+      pointer-events: auto;
+      opacity: 1;
+      //transform: translateY(0);
+    }
+
+    @include mq('tablet') {
+      opacity: 1;
+      transition: 0s;
+      flex-direction: row;
+      margin-left: auto;
+      position: static;
+      box-shadow: none;
+      padding-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &-user {
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include mq('tablet') {
+        flex-direction: row;
+      }
+
+      a {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: $finger-size;
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+
+    &-property {
+      margin-top: 20px;
+      justify-content: center;
+      @include mq('tablet') {
+        margin-top: 0;
+      }
+    }
+
+    &-helper {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      @include mq('tablet') {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+      select {
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid #e0e6f1;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0;
+        color: $color-navy;
+        height: $finger-size;
+        &:nth-child(1) {
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
+        }
+        &:nth-child(2) {
+          border-left-width: 0;
+          border-bottom-right-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
+      }
+    }
+  }
+}
