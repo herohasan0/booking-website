@@ -68,7 +68,8 @@ small {
     padding-left: 40px; }
 
 a {
-  color: #083b87; }
+  color: #083b87;
+  transition: 0.3; }
 
 small {
   color: white; }
@@ -626,6 +627,8 @@ td {
   z-index: 0;
   width: 100%;
   text-align: center; }
+  .Showcase .container {
+    color: white; }
   @media (min-width: 768px) {
     .Showcase {
       padding-top: 50px;
@@ -640,8 +643,47 @@ td {
       .Showcase-subtitle {
         font-size: 1.2em;
         margin-top: 40px; } }
-  .Showcase .container {
-    color: white; }
+  .Showcase-subtitles {
+    display: none; }
+    @media (min-width: 768px) {
+      .Showcase-subtitles {
+        display: block;
+        width: 100%;
+        margin-top: 40px; } }
+    .Showcase-subtitles-item {
+      color: inherit;
+      font-size: 0.9em; }
+      .Showcase-subtitles-item + .Showcase-subtitles-item {
+        margin-left: 30px; }
+  .Showcase-store {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .Showcase-store {
+        margin-top: 50px; } }
+    .Showcase-store-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      height: 45px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(0, 0, 0, 0.15);
+      border-radius: 3px; }
+      @media (min-width: 768px) {
+        .Showcase-store-link {
+          height: 50px; } }
+      .Showcase-store-link:hover {
+        background-color: rgba(0, 0, 0, 0.3); }
+      .Showcase-store-link img {
+        width: 90px; }
+        @media (min-width: 768px) {
+          .Showcase-store-link img {
+            width: 110px; } }
 
 .Search {
   z-index: 0;
@@ -680,16 +722,3 @@ td {
   justify-content: center; }
   .for-work .checkbox {
     margin-left: 10px; }
-
-.Showcase-subtitles {
-  display: none; }
-  @media (min-width: 768px) {
-    .Showcase-subtitles {
-      display: block;
-      width: 100%;
-      margin-top: 40px; } }
-  .Showcase-subtitles-item {
-    color: inherit;
-    font-size: 0.9em; }
-    .Showcase-subtitles-item + .Showcase-subtitles-item {
-      margin-left: 30px; }

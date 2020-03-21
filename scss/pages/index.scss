@@ -1,4 +1,7 @@
 .Showcase {
+  .container {
+    color: white;
+  }
   background: $color-navy url(img/showcase_back.jpg) no-repeat center center /
     cover;
   padding-top: 30px;
@@ -23,8 +26,56 @@
       margin-top: 40px;
     }
   }
-  .container {
-    color: white;
+
+  &-subtitles {
+    display: none;
+    @include mq('tablet') {
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    &-item {
+      color: inherit;
+      font-size: $font-size-small;
+      & + & {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  &-store {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq('tablet') {
+      margin-top: 50px;
+    }
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      height: 45px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(black, 0.15);
+      border-radius: $border-radius;
+      @include mq('tablet') {
+        height: 50px;
+      }
+      &:hover {
+        background-color: rgba(black, 0.3);
+      }
+      img {
+        width: 90px;
+        @include mq('tablet') {
+          width: 110px;
+        }
+      }
+    }
   }
 }
 
@@ -71,22 +122,5 @@
   justify-content: center;
   .checkbox {
     margin-left: 10px;
-  }
-}
-
-.Showcase-subtitles {
-  display: none;
-  @include mq('tablet') {
-    display: block;
-    width: 100%;
-    margin-top: 40px;
-  }
-
-  &-item {
-    color: inherit;
-    font-size: $font-size-small;
-    & + & {
-      margin-left: 30px;
-    }
   }
 }
