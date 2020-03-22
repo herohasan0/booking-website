@@ -10,7 +10,10 @@
   &-item {
     margin-right: 15px;
     color: #98afd1;
-    font-size: $font-size-small;
+    font-size: $font-size-small-mobile;
+    @include mq('tablet') {
+      font-size: $font-size-small;
+    }
     &:hover {
       color: $color-bold-blue;
     }

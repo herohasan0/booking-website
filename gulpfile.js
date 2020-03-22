@@ -24,9 +24,8 @@ gulp.task('browse', function() {
     }
   });
 
-  //gulp.watch('*.html').on('change', reload);
-  gulp.watch('./views/**/*.pug').on('change', reload);
-  //gulp.watch('views/**/*.pug', gulp.series('html'));
+  gulp.watch('./views/**/*.pug').on('change', gulp.series('html'));
+  gulp.watch('./js/**/*.js').on('change', reload);
   gulp.watch('./scss/**/*.scss', gulp.series('css'));
 });
 
