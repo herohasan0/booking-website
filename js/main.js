@@ -39,3 +39,9 @@ $carousel.on('staticClick.flickity', function(
   $carousel.flickity('reposition');
   $carousel.flickity('select', cellIndex);
 });
+
+$($('.Advantages-boxes-box')).on('click', function() {
+  var click = $(this);
+  $('.Advantages-boxes-box').removeClass('add-shadow');
+  click.addClass('add-shadow');
+});

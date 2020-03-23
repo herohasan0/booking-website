@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif;
+  height: 2000px; }
 
 .container {
   max-width: 1140px;
@@ -849,7 +850,7 @@ https://flickity.metafizzy.co
     margin-left: 10px; }
 
 .Highlights {
-  margin-top: 20px; }
+  margin-top: 35px; }
   @media (min-width: 768px) {
     .Highlights {
       margin-top: -100px; } }
@@ -944,3 +945,42 @@ https://flickity.metafizzy.co
           .Highlights-item-extra-content-button .button {
             font-size: 0.9em;
             padding: 23px; } }
+
+.Advantages-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .Advantages-boxes {
+      flex-direction: row;
+      margin-top: 50px; } }
+  .Advantages-boxes-box {
+    padding: 35px; }
+    @media (min-width: 768px) {
+      .Advantages-boxes-box:nth-child(1) {
+        width: 30%;
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1); }
+      .Advantages-boxes-box:nth-child(2) {
+        width: 40%; }
+      .Advantages-boxes-box:nth-child(3) {
+        width: 30%; } }
+    .Advantages-boxes-box.add-shadow {
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1); }
+    .Advantages-boxes-box-title {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.4; }
+      .Advantages-boxes-box-title span {
+        color: #083b87;
+        font-size: 1.2em; }
+    .Advantages-boxes-box-note {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9em;
+      line-height: 1.5; }
+      .Advantages-boxes-box-note a {
+        text-decoration: underline;
+        color: #083b87; }
+    @media (min-width: 768px) {
+      .Advantages-boxes-box + .Advantages-boxes-box {
+        margin-left: 20px; } }

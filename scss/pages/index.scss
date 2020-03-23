@@ -127,7 +127,7 @@
 }
 
 .Highlights {
-  margin-top: 20px;
+  margin-top: 35px;
 
   @include mq('tablet') {
     margin-top: -100px;
@@ -256,6 +256,62 @@
               padding: 23px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.Advantages {
+  &-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mq('tablet') {
+      flex-direction: row;
+      margin-top: 50px;
+    }
+    &-box {
+      @include mq('tablet') {
+        &:nth-child(1) {
+          width: 30%;
+          box-shadow: 0 40px 80px rgba(black, 0.1);
+        }
+        &:nth-child(2) {
+          width: 40%;
+        }
+        &:nth-child(3) {
+          width: 30%;
+        }
+      }
+
+      padding: 35px;
+      &.add-shadow {
+        box-shadow: 0 40px 80px rgba(black, 0.1);
+      }
+      &-title {
+        font-size: $font-size;
+        font-weight: bold;
+        line-height: 1.4;
+        span {
+          color: $color-navy;
+          font-size: 1.2em;
+        }
+      }
+      &-note {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: $font-size-small;
+        line-height: 1.5;
+        a {
+          text-decoration: underline;
+          color: $color-navy;
+        }
+      }
+
+      @include mq('tablet') {
+        & + & {
+          margin-left: 20px;
         }
       }
     }
