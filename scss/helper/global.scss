@@ -110,8 +110,6 @@ small {
   &-full {
     width: 100%;
     background-color: $color-navy;
-    @include mq('tablet') {
-    }
   }
 }
 

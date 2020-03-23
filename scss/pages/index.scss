@@ -195,7 +195,7 @@
             }
           }
           h5 {
-            color: rgba(white, 0.9);
+            color: $color-soft-white;
             margin-bottom: 2px;
           }
         }
@@ -272,10 +272,10 @@
       margin-top: 50px;
     }
     &-box {
+      padding: 35px;
       @include mq('tablet') {
         &:nth-child(1) {
           width: 30%;
-          box-shadow: 0 40px 80px rgba(black, 0.1);
         }
         &:nth-child(2) {
           width: 40%;
@@ -284,8 +284,10 @@
           width: 30%;
         }
       }
-
-      padding: 35px;
+      @include mq('phone') {
+        box-shadow: 0 40px 80px rgba(black, 0.1);
+        margin-top: 35px;
+      }
       &.add-shadow {
         box-shadow: 0 40px 80px rgba(black, 0.1);
       }
@@ -293,8 +295,9 @@
         font-size: $font-size;
         font-weight: bold;
         line-height: 1.4;
+        color: $color-navy;
         span {
-          color: $color-navy;
+          color: $color-blue;
           font-size: 1.2em;
         }
       }
@@ -312,6 +315,130 @@
       @include mq('tablet') {
         & + & {
           margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.Destinations {
+  margin-top: 60px;
+  @include mq('tablet') {
+    margin-top: 80px;
+  }
+  &-title {
+    font-size: $font-size-big;
+    text-align: center;
+    width: 100%;
+    color: $color-navy;
+  }
+  &-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    @include mq('tablet') {
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 50px;
+    }
+    &-item {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      margin-top: 30px;
+      @include mq('tablet') {
+        width: 33%;
+      }
+      &-left {
+        &-img {
+          position: absolute;
+          float: left;
+          width: 90px;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &-right {
+        height: 100%;
+        margin-right: 20px;
+        position: absolute;
+        top: 0;
+        margin-left: 110px;
+        border-bottom: 1px solid #eef2f7;
+        &-title {
+          h5 {
+            margin-top: 10px;
+            color: $color-navy;
+            font-size: $font-size;
+          }
+        }
+        &-subtitle {
+          font-size: $font-size-small;
+          margin-top: 5px;
+          span:first-child {
+            color: $color-soft-white;
+          }
+          span:nth-child(2) {
+            font-weight: bold;
+            font-size: $font-size-small-mobile;
+            background-color: $color-yellow;
+            padding: 2px 4px;
+            margin-left: 10px;
+            color: white;
+          }
+        }
+        &-description {
+          span {
+            width: 100%;
+            display: inline-block;
+            margin-top: 8px;
+            margin-right: 40px;
+            font-size: $font-size-small-mobile;
+            text-decoration: underline;
+            color: $color-soft-white;
+          }
+        }
+        &-button {
+          a {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 40px;
+            height: 100%;
+            text-align: end;
+            cursor: pointer;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+      &-big {
+        &-button {
+          background-color: $color-blue;
+          height: 60%;
+          @include mq('tablet') {
+            height: 100%;
+          }
+        }
+        &-arrow {
+          display: none;
+          @include mq('tablet') {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 30px;
+          }
+          a {
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
       }
     }

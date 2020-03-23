@@ -901,7 +901,7 @@ https://flickity.metafizzy.co
           .Highlights-item-show .content .tag-list a {
             pointer-events: none; }
           .Highlights-item-show .content .tag h5 {
-            color: rgba(255, 255, 255, 0.9);
+            color: #afafaf;
             margin-bottom: 2px; }
       .Highlights-item-show:before {
         z-index: 1;
@@ -958,20 +958,24 @@ https://flickity.metafizzy.co
     padding: 35px; }
     @media (min-width: 768px) {
       .Advantages-boxes-box:nth-child(1) {
-        width: 30%;
-        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1); }
+        width: 30%; }
       .Advantages-boxes-box:nth-child(2) {
         width: 40%; }
       .Advantages-boxes-box:nth-child(3) {
         width: 30%; } }
+    @media (max-width: 768px) {
+      .Advantages-boxes-box {
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+        margin-top: 35px; } }
     .Advantages-boxes-box.add-shadow {
       box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1); }
     .Advantages-boxes-box-title {
       font-size: 16px;
       font-weight: bold;
-      line-height: 1.4; }
+      line-height: 1.4;
+      color: #083b87; }
       .Advantages-boxes-box-title span {
-        color: #083b87;
+        color: #01acee;
         font-size: 1.2em; }
     .Advantages-boxes-box-note {
       display: inline-block;
@@ -984,3 +988,99 @@ https://flickity.metafizzy.co
     @media (min-width: 768px) {
       .Advantages-boxes-box + .Advantages-boxes-box {
         margin-left: 20px; } }
+
+.Destinations {
+  margin-top: 60px; }
+  @media (min-width: 768px) {
+    .Destinations {
+      margin-top: 80px; } }
+  .Destinations-title {
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    color: #083b87; }
+  .Destinations-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; }
+    @media (min-width: 768px) {
+      .Destinations-group {
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 50px; } }
+    .Destinations-group-item {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      margin-top: 30px; }
+      @media (min-width: 768px) {
+        .Destinations-group-item {
+          width: 33%; } }
+      .Destinations-group-item-left-img {
+        position: absolute;
+        float: left;
+        width: 90px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .Destinations-group-item-right {
+        height: 100%;
+        margin-right: 20px;
+        position: absolute;
+        top: 0;
+        margin-left: 110px;
+        border-bottom: 1px solid #eef2f7; }
+        .Destinations-group-item-right-title h5 {
+          margin-top: 10px;
+          color: #083b87;
+          font-size: 16px; }
+        .Destinations-group-item-right-subtitle {
+          font-size: 0.9em;
+          margin-top: 5px; }
+          .Destinations-group-item-right-subtitle span:first-child {
+            color: #afafaf; }
+          .Destinations-group-item-right-subtitle span:nth-child(2) {
+            font-weight: bold;
+            font-size: 0.8em;
+            background-color: #fbbe00;
+            padding: 2px 4px;
+            margin-left: 10px;
+            color: white; }
+        .Destinations-group-item-right-description span {
+          width: 100%;
+          display: inline-block;
+          margin-top: 8px;
+          margin-right: 40px;
+          font-size: 0.8em;
+          text-decoration: underline;
+          color: #afafaf; }
+        .Destinations-group-item-right-button a {
+          position: absolute;
+          top: 10px;
+          right: 0;
+          width: 40px;
+          height: 100%;
+          text-align: end;
+          cursor: pointer; }
+          .Destinations-group-item-right-button a img {
+            width: 16px;
+            height: 16px; }
+      .Destinations-group-item-big-button {
+        background-color: #01acee;
+        height: 60%; }
+        @media (min-width: 768px) {
+          .Destinations-group-item-big-button {
+            height: 100%; } }
+      .Destinations-group-item-big-arrow {
+        display: none; }
+        @media (min-width: 768px) {
+          .Destinations-group-item-big-arrow {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 30px; } }
+        .Destinations-group-item-big-arrow a img {
+          width: 16px;
+          height: 16px; }

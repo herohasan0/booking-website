@@ -14,5 +14,10 @@
     @media (min-width: 1200px) {
       @content;
     }
+  } @else if ($width == 'phone') {
+    // Small  devices (768px and down)
+    @media (max-width: 768px) {
+      @content;
+    }
   }
 }
