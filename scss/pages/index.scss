@@ -711,3 +711,81 @@
     }
   }
 }
+
+.Wheretostay {
+  position: relative;
+  margin-top: 30px;
+  border-top: 1px solid transparent;
+  @include mq('tablet') {
+    margin-top: 100px;
+  }
+  &:before {
+    @include mq('tablet') {
+      content: '';
+      width: 1140px;
+      height: 1px;
+      background-color: $color-soft-white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+  }
+  &-title {
+    margin-top: 30px;
+    @include mq('tablet') {
+      margin-top: 80px;
+    }
+  }
+  &-content {
+    margin-top: 30px;
+    &-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      line-height: 1.3;
+      color: $color-soft-white;
+      font-weight: bold;
+      @include mq('tablet') {
+        width: 60%;
+      }
+    }
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      &-button {
+        & + & {
+          margin-left: 20px;
+        }
+        font-size: $font-size-small-mobile;
+        @include mq('tablet') {
+          font-size: $font-size;
+        }
+      }
+    }
+    &-reviews {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      &-review {
+        margin-top: 30px;
+        margin-right: 10px;
+        @include mq('tablet') {
+          margin-right: 50px;
+          margin-top: 50px;
+        }
+        &-title {
+          color: $color-navy;
+        }
+        &-note {
+          font-size: $font-size-small;
+          color: $color-soft-white;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

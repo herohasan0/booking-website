@@ -67,6 +67,11 @@ small {
   .form-item .select select {
     padding-left: 40px; }
 
+h3.third-title {
+  font-size: 2em;
+  text-align: center;
+  color: #083b87; }
+
 a {
   color: inherit;
   transition: 0.3; }
@@ -1295,3 +1300,68 @@ https://flickity.metafizzy.co
       .Aparthotels-button-arrow a img {
         width: 16px;
         height: 16px; }
+
+.Wheretostay {
+  position: relative;
+  margin-top: 30px;
+  border-top: 1px solid transparent; }
+  @media (min-width: 768px) {
+    .Wheretostay {
+      margin-top: 100px; } }
+  @media (min-width: 768px) {
+    .Wheretostay:before {
+      content: '';
+      width: 1140px;
+      height: 1px;
+      background-color: #afafaf;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0; } }
+  .Wheretostay-title {
+    margin-top: 30px; }
+    @media (min-width: 768px) {
+      .Wheretostay-title {
+        margin-top: 80px; } }
+  .Wheretostay-content {
+    margin-top: 30px; }
+    .Wheretostay-content-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      line-height: 1.3;
+      color: #afafaf;
+      font-weight: bold; }
+      @media (min-width: 768px) {
+        .Wheretostay-content-subtitle {
+          width: 60%; } }
+    .Wheretostay-content-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px; }
+      .Wheretostay-content-buttons-button {
+        font-size: 0.8em; }
+        .Wheretostay-content-buttons-button + .Wheretostay-content-buttons-button {
+          margin-left: 20px; }
+        @media (min-width: 768px) {
+          .Wheretostay-content-buttons-button {
+            font-size: 16px; } }
+    .Wheretostay-content-reviews {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px; }
+      .Wheretostay-content-reviews-review {
+        margin-top: 30px;
+        margin-right: 10px; }
+        @media (min-width: 768px) {
+          .Wheretostay-content-reviews-review {
+            margin-right: 50px;
+            margin-top: 50px; } }
+        .Wheretostay-content-reviews-review-title {
+          color: #083b87; }
+        .Wheretostay-content-reviews-review-note {
+          font-size: 0.9em;
+          color: #afafaf;
+          margin-top: 10px; }

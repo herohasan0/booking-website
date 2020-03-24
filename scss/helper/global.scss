@@ -73,6 +73,12 @@ small {
   }
 }
 
+h3.third-title {
+  font-size: $font-size-big;
+  text-align: center;
+  color: $color-navy;
+}
+
 a {
   color: inherit;
   transition: 0.3;
