@@ -1084,3 +1084,56 @@ https://flickity.metafizzy.co
         .Destinations-group-item-big-arrow a img {
           width: 16px;
           height: 16px; }
+
+@media (min-width: 768px) {
+  .Support {
+    margin-top: 80px; } }
+
+.Support-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .Support-items {
+      flex-direction: row; } }
+
+.Support-items-item {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .Support-items-item {
+      width: 40%; } }
+  .Support-items-item-icon svg {
+    width: 50px;
+    height: 40px;
+    color: #083b87; }
+    @media (min-width: 768px) {
+      .Support-items-item-icon svg {
+        width: 60px;
+        height: 60px; } }
+  .Support-items-item-main {
+    margin-left: 80px; }
+    @media (min-width: 768px) {
+      .Support-items-item-main {
+        margin-left: 100px; } }
+    .Support-items-item-main-title {
+      font-weight: bold;
+      width: 50%; }
+      .Support-items-item-main-title span:first-child {
+        margin-bottom: 8px; }
+      .Support-items-item-main-title span {
+        display: inline-block; }
+      .Support-items-item-main-title-number {
+        font-size: 2em;
+        color: #01acee; }
+      .Support-items-item-main-title-text {
+        font-size: 16px;
+        color: #083b87; }
+    .Support-items-item-main-description {
+      margin-top: 20px;
+      line-height: 1.4;
+      font-size: 0.9em;
+      color: #afafaf;
+      width: 90%; }
+      @media (min-width: 768px) {
+        .Support-items-item-main-description {
+          width: 80%; } }

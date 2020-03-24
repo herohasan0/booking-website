@@ -444,3 +444,68 @@
     }
   }
 }
+
+.Support {
+  @include mq('tablet') {
+    margin-top: 80px;
+  }
+  &-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mq('tablet') {
+      flex-direction: row;
+    }
+  }
+  &-items-item {
+    margin-top: 30px;
+    @include mq('tablet') {
+      width: 40%;
+    }
+    &-icon {
+      svg {
+        width: 50px;
+        height: 40px;
+        color: $color-navy;
+        @include mq('tablet') {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    &-main {
+      margin-left: 80px;
+      @include mq('tablet') {
+        margin-left: 100px;
+      }
+      &-title {
+        font-weight: bold;
+        width: 50%;
+        span:first-child {
+          margin-bottom: 8px;
+        }
+        span {
+          display: inline-block;
+        }
+        &-number {
+          font-size: $font-size-big;
+          color: $color-blue;
+        }
+        &-text {
+          font-size: $font-size;
+          color: $color-navy;
+        }
+      }
+      &-description {
+        margin-top: 20px;
+        line-height: 1.4;
+        font-size: $font-size-small;
+        color: $color-soft-white;
+        @include mq('tablet') {
+          width: 80%;
+        }
+        width: 90%;
+      }
+    }
+  }
+}
