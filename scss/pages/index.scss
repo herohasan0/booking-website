@@ -682,4 +682,32 @@
       }
     }
   }
+  &-button {
+    position: relative;
+    height: 50px;
+    display: block;
+    width: 50%;
+    background-color: $color-navy;
+    margin-top: 30px;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    @include mq('tablet') {
+      width: 20%;
+      margin-top: 60px;
+    }
+    &-arrow {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      a {
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
 }
