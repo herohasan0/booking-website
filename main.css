@@ -1137,3 +1137,64 @@ https://flickity.metafizzy.co
       @media (min-width: 768px) {
         .Support-items-item-main-description {
           width: 80%; } }
+
+.Discover {
+  margin-top: 80px; }
+  .Discover-title {
+    font-size: 2em;
+    text-align: center;
+    color: #083b87; }
+  .Discover-items {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .Discover-items {
+        flex-direction: row;
+        align-items: initial; } }
+    .Discover-items-item {
+      position: relative;
+      box-shadow: 0 50px 100px rgba(0, 0, 0, 0.3); }
+      @media (min-width: 768px) {
+        .Discover-items-item {
+          width: 25%;
+          margin-top: initial; } }
+      .Discover-items-item:last-child {
+        background-color: #01acee; }
+      .Discover-items-item-cover {
+        position: relative;
+        width: 270px;
+        height: 270px; }
+        .Discover-items-item-cover-img {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 270px;
+          height: 270px; }
+        .Discover-items-item-cover:before {
+          z-index: 1;
+          content: '';
+          position: absolute;
+          background-color: rgba(1, 172, 238, 0.3);
+          width: 270px;
+          height: 270px; }
+      .Discover-items-item + .Discover-items-item {
+        margin-top: 30px; }
+        @media (min-width: 768px) {
+          .Discover-items-item + .Discover-items-item {
+            margin-left: 20px;
+            margin-top: initial; } }
+      .Discover-items-item-text {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        padding: 30px; }
+        .Discover-items-item-text-title h5 {
+          font-size: 1.8em;
+          color: white; }
+        .Discover-items-item-text-description p {
+          margin-top: 15px;
+          color: white;
+          font-size: 0.9em;
+          line-height: 1.3; }
