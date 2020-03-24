@@ -587,3 +587,99 @@
     }
   }
 }
+
+.Aparthotels {
+  margin-top: 80px;
+  &-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    @include mq('tablet') {
+      flex-direction: row;
+    }
+    &-item {
+      background-color: white;
+      box-shadow: 0 30px 60px rgba(rgb(82, 82, 82), 0.15);
+      & + & {
+        margin-top: 30px;
+        @include mq('tablet') {
+          margin-top: 0;
+        }
+      }
+      &-top {
+        padding: 15px;
+        position: relative;
+        &-label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          background-color: $color-blue;
+          right: 0;
+          bottom: 30;
+          width: auto;
+          height: 40px;
+          color: white;
+          span:first-child {
+            padding-left: 10px;
+            font-weight: bold;
+            font-size: $font-size;
+            margin-right: 5px;
+          }
+          span:last-child {
+            padding-right: 10px;
+            font-size: $font-size-small-mobile;
+          }
+        }
+        &-img {
+          width: 100%;
+          height: 200px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 15;
+            left: 15;
+            width: calc(100% - 30px);
+            height: 200px;
+            background: linear-gradient(
+              232.69deg,
+              #01abee96 0%,
+              rgba(196, 196, 196, 0) 115.64%
+            );
+          }
+        }
+      }
+      &-bottom {
+        padding-left: 30px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        &-subtitle {
+          span:last-child {
+            background-color: white;
+            color: $color-soft-white;
+            text-decoration: underline;
+          }
+        }
+        &-description {
+          font-size: $font-size-small;
+          color: black;
+          p {
+            margin-top: 25px;
+            color: inherit;
+            line-height: 1.4;
+          }
+        }
+      }
+      @include mq('tablet') {
+        width: 25%;
+        & + & {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
