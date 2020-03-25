@@ -73,10 +73,9 @@ small {
   }
 }
 
-h3.third-title {
+.third-title {
   font-size: $font-size-big;
   text-align: center;
-  color: $color-navy;
 }
 
 a {
@@ -135,7 +134,7 @@ small {
   display: flex;
   position: relative;
   right: 0;
-  pointer-events: none;
+  // pointer-events: none;
   input {
     position: absolute;
     opacity: 0;

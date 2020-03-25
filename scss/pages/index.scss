@@ -733,6 +733,7 @@
   }
   &-title {
     margin-top: 30px;
+    color: $color-navy;
     @include mq('tablet') {
       margin-top: 80px;
     }
@@ -785,6 +786,75 @@
           color: $color-soft-white;
           margin-top: 10px;
         }
+      }
+    }
+  }
+}
+
+.Signup {
+  background: $color-navy url(img/alt_back.jpg) no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+  @include mq('tablet') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  &-title {
+    font-size: $font-size-big;
+    @include mq('tablet') {
+      font-size: $font-size-bigger;
+    }
+  }
+  &-note {
+    margin-top: 20px;
+    color: $color-soft-white;
+  }
+  &-inputarea {
+    margin-top: 30px;
+    &-input {
+      min-width: initial;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 80%;
+      @include mq('tablet') {
+        width: 30%;
+      }
+    }
+    &-button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-top: 20px;
+    }
+  }
+  &-checkboxarea {
+    justify-content: center;
+    display: inline-flex;
+    margin-top: 20px;
+    &:before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      border: 2px solid white;
+      margin-right: 10px;
+      @include mq('tablet') {
+        height: 1em;
+        width: 1em;
+      }
+    }
+    &-input {
+      opacity: 0;
+      margin-right: 10px;
+    }
+    .icon {
+      left: 0;
+    }
+    &-note {
+      font-size: $font-size-small-mobile;
+      @include mq('tablet') {
+        font-size: $font-size;
       }
     }
   }
