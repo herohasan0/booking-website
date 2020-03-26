@@ -1426,75 +1426,117 @@ https://flickity.metafizzy.co
 .Footer {
   background: linear-gradient(90deg, #093e8b 31.79%, #126ab8 80.06%);
   color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-top: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px; }
   .Footer .container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
+  @media (min-width: 768px) {
+    .Footer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      margin-top: 100px; } }
   .Footer-top {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      .Footer-top {
+        flex-direction: row;
+        align-items: initial; } }
     .Footer-top-link {
       font-size: 0.8em; }
+      @media (max-width: 768px) {
+        .Footer-top-link + .Footer-top-link {
+          margin-top: 20px; } }
   .Footer-main {
     position: relative;
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex; }
+    @media (min-width: 768px) {
+      .Footer-main {
+        margin-top: 80px; } }
     .Footer-main:before {
-      position: absolute;
-      top: -35;
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: #afafaf; }
-    .Footer-main-left {
-      display: flex;
-      justify-content: space-between;
-      width: 70%; }
-      .Footer-main-left-part {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 30px; }
-        .Footer-main-left-part-link {
-          margin-top: 20px;
-          font-size: 0.8em; }
-    .Footer-main-right {
-      width: 26%;
-      margin-top: 43px;
-      margin-left: 60px; }
-      .Footer-main-right-icons {
-        display: flex; }
-        .Footer-main-right-icons-store {
-          margin-left: initial;
-          margin-right: initial;
-          padding-left: 22px;
-          padding-right: 22px; }
-          .Footer-main-right-icons-store img {
-            width: 90px; }
-          .Footer-main-right-icons-store + .Footer-main-right-icons-store {
-            margin-left: 10px; }
-      .Footer-main-right-text {
-        position: relative;
-        font-size: 0.8em;
-        margin-top: 20px;
-        line-height: 1.6;
-        border-top: 1px solid transparent; }
-        .Footer-main-right-text:before {
+      display: none; }
+      @media (min-width: 768px) {
+        .Footer-main:before {
+          display: initial;
           position: absolute;
+          top: -35;
           content: '';
           width: 100%;
           height: 1px;
-          background-color: #afafaf; }
-        .Footer-main-right-text p {
-          color: #afafaf;
-          margin-top: 20px; }
-          .Footer-main-right-text p span {
-            color: white;
-            text-decoration: underline;
-            font-weight: bold; }
+          background-color: #afafaf; } }
+    .Footer-main-left {
+      display: none; }
+      @media (min-width: 768px) {
+        .Footer-main-left {
+          display: flex;
+          justify-content: space-between;
+          width: 70%; }
+          .Footer-main-left-part {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 30px; }
+            .Footer-main-left-part-link {
+              margin-top: 20px;
+              font-size: 0.8em; } }
+    @media (min-width: 768px) {
+      .Footer-main-right {
+        width: 26%;
+        margin-top: 43px;
+        margin-left: 60px; } }
+    .Footer-main-right-icons {
+      display: flex; }
+      @media (max-width: 768px) {
+        .Footer-main-right-icons {
+          justify-content: center; } }
+      .Footer-main-right-icons-store {
+        margin-left: initial;
+        margin-right: initial;
+        padding-left: 22px;
+        padding-right: 22px; }
+        .Footer-main-right-icons-store img {
+          width: 90px; }
+        .Footer-main-right-icons-store + .Footer-main-right-icons-store {
+          margin-left: 10px; }
+    .Footer-main-right-text {
+      position: relative;
+      font-size: 0.8em;
+      margin-top: 20px;
+      line-height: 1.6;
+      border-top: 1px solid transparent;
+      margin-left: auto;
+      margin-right: auto; }
+      .Footer-main-right-text:before {
+        display: none; }
+        @media (min-width: 768px) {
+          .Footer-main-right-text:before {
+            display: initial;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #afafaf; } }
+      .Footer-main-right-text p {
+        color: #afafaf;
+        margin-top: 20px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .Footer-main-right-text p {
+            text-align: left; } }
+        .Footer-main-right-text p span {
+          display: block;
+          color: white;
+          text-decoration: underline;
+          font-weight: bold; }
+          @media (min-width: 768px) {
+            .Footer-main-right-text p span {
+              display: inline; } }
   .Footer-bottom {
     text-align: center;
     margin-top: 50px;
