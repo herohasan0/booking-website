@@ -1422,3 +1422,81 @@ https://flickity.metafizzy.co
       @media (min-width: 768px) {
         .Signup-checkboxarea-note {
           font-size: 16px; } }
+
+.Footer {
+  background: linear-gradient(90deg, #093e8b 31.79%, #126ab8 80.06%);
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 100px; }
+  .Footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .Footer-top {
+    display: flex;
+    justify-content: space-between; }
+    .Footer-top-link {
+      font-size: 0.8em; }
+  .Footer-main {
+    position: relative;
+    margin-top: 80px;
+    display: flex; }
+    .Footer-main:before {
+      position: absolute;
+      top: -35;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #afafaf; }
+    .Footer-main-left {
+      display: flex;
+      justify-content: space-between;
+      width: 70%; }
+      .Footer-main-left-part {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 30px; }
+        .Footer-main-left-part-link {
+          margin-top: 20px;
+          font-size: 0.8em; }
+    .Footer-main-right {
+      width: 26%;
+      margin-top: 43px;
+      margin-left: 60px; }
+      .Footer-main-right-icons {
+        display: flex; }
+        .Footer-main-right-icons-store {
+          margin-left: initial;
+          margin-right: initial;
+          padding-left: 22px;
+          padding-right: 22px; }
+          .Footer-main-right-icons-store img {
+            width: 90px; }
+          .Footer-main-right-icons-store + .Footer-main-right-icons-store {
+            margin-left: 10px; }
+      .Footer-main-right-text {
+        position: relative;
+        font-size: 0.8em;
+        margin-top: 20px;
+        line-height: 1.6;
+        border-top: 1px solid transparent; }
+        .Footer-main-right-text:before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 1px;
+          background-color: #afafaf; }
+        .Footer-main-right-text p {
+          color: #afafaf;
+          margin-top: 20px; }
+          .Footer-main-right-text p span {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold; }
+  .Footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    color: #afafaf;
+    font-size: 0.8em; }
