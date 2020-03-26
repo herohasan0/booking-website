@@ -623,10 +623,14 @@ td {
   .Navigation-item {
     margin-right: 15px;
     color: #98afd1;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .Navigation-item {
+        margin-right: 30px;
         font-size: 0.9em; } }
+    .Navigation-item.active {
+      color: #093b87; }
     .Navigation-item:hover {
       color: #093b87; }
 

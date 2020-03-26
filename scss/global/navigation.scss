@@ -11,8 +11,13 @@
     margin-right: 15px;
     color: #98afd1;
     font-size: $font-size-small-mobile;
+    cursor: pointer;
     @include mq('tablet') {
+      margin-right: 30px;
       font-size: $font-size-small;
+    }
+    &.active {
+      color: $color-bold-blue;
     }
     &:hover {
       color: $color-bold-blue;

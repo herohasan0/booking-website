@@ -1,9 +1,19 @@
+//////////////// Header func ////////////////
+
 $('.Header-switch').on('click', function() {
   if ($('Header').is('.menu-show')) {
     $('.Header').removeClass('menu-show');
   } else {
     $('.Header').addClass('menu-show');
   }
+});
+
+//////////////// Navigation func ////////////////
+
+$('.Navigation-item').on('click', function() {
+  var item = $(this);
+  $('.Navigation-item').removeClass('active');
+  item.addClass('active');
 });
 
 $('.Highlights-item-extra-content-button').on('click', function() {
