@@ -1,5 +1,6 @@
 .Header {
   height: 64px;
+  font-size: $font-size-small;
 
   .container {
     position: relative;
@@ -41,7 +42,6 @@
     .Header.menu-show & {
       pointer-events: auto;
       opacity: 1;
-      //transform: translateY(0);
     }
 
     @include mq('tablet') {
@@ -57,13 +57,14 @@
     }
 
     &-user {
-      margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      margin-top: 20px;
       @include mq('tablet') {
         flex-direction: row;
+        margin-right: 10px;
+        margin-top: initial;
       }
 
       a {
@@ -101,8 +102,8 @@
         appearance: none;
         background-color: transparent;
         border: 1px solid #e0e6f1;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         border-radius: 0;
         color: $color-navy;
         height: $finger-size;
