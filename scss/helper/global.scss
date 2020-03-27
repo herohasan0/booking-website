@@ -21,8 +21,8 @@ small {
 .icon {
   display: inline-block;
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
@@ -48,10 +48,10 @@ small {
   select {
     appearance: none;
     background-color: white;
-
     border: 0;
     width: 100%;
     height: $finger-size;
+    border-radius: $border-radius;
   }
 }
 
