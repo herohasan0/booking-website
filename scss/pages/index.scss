@@ -414,6 +414,9 @@
         top: 0;
         margin-left: 110px;
         border-bottom: 1px solid #eef2f7;
+        @include mq('phone') {
+          border: 0;
+        }
         &-title {
           h5 {
             margin-top: 10px;
@@ -422,17 +425,42 @@
           }
         }
         &-subtitle {
+          position: relative;
           font-size: $font-size-small;
           margin-top: 5px;
-          span:first-child {
+          &-icon {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
             color: $color-soft-white;
           }
+          &-airplane {
+            position: absolute;
+            height: 19px;
+            width: 19px;
+            top: -1px;
+            margin-left: 20px;
+            font-size: $font-size-small-mobile;
+            background-color: $color-blue;
+            color: white;
+            padding: 3px;
+          }
           span:nth-child(2) {
+            position: relative;
+            color: $color-soft-white;
+            left: 19px;
+            padding-right: 10px;
+          }
+          span:nth-child(3) {
+            left: 15px;
+            position: relative;
             font-weight: bold;
             font-size: $font-size-small-mobile;
             background-color: $color-yellow;
             padding: 2px 4px;
-            margin-left: 10px;
             color: white;
           }
         }
@@ -474,10 +502,14 @@
         &-arrow {
           display: none;
           @include mq('tablet') {
+            display: block;
             position: absolute;
             transform: translateY(-50%);
             top: 50%;
             right: 30px;
+            width: 25px;
+            height: 25px;
+            color: white;
           }
           a {
             img {

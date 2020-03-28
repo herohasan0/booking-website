@@ -1,7 +1,6 @@
 body {
   font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif;
-  height: 2000px; }
+  font-family: "Open Sans", Arial, sans-serif; }
 
 .container {
   max-width: 1140px;
@@ -69,7 +68,7 @@ small {
     padding-left: 40px; }
 
 .third-title {
-  font-size: 2em;
+  font-size: 2.3em;
   text-align: center; }
 
 a {
@@ -1042,7 +1041,7 @@ https://flickity.metafizzy.co
     .Destinations {
       margin-top: 80px; } }
   .Destinations-title {
-    font-size: 2em;
+    font-size: 2.3em;
     text-align: center;
     width: 100%;
     color: #083b87; }
@@ -1079,21 +1078,47 @@ https://flickity.metafizzy.co
         top: 0;
         margin-left: 110px;
         border-bottom: 1px solid #eef2f7; }
+        @media (max-width: 768px) {
+          .Destinations-group-item-right {
+            border: 0; } }
         .Destinations-group-item-right-title h5 {
           margin-top: 10px;
           color: #083b87;
           font-size: 16px; }
         .Destinations-group-item-right-subtitle {
+          position: relative;
           font-size: 0.9em;
           margin-top: 5px; }
-          .Destinations-group-item-right-subtitle span:first-child {
+          .Destinations-group-item-right-subtitle-icon {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
             color: #afafaf; }
+          .Destinations-group-item-right-subtitle-airplane {
+            position: absolute;
+            height: 19px;
+            width: 19px;
+            top: -1px;
+            margin-left: 20px;
+            font-size: 0.8em;
+            background-color: #01acee;
+            color: white;
+            padding: 3px; }
           .Destinations-group-item-right-subtitle span:nth-child(2) {
+            position: relative;
+            color: #afafaf;
+            left: 19px;
+            padding-right: 10px; }
+          .Destinations-group-item-right-subtitle span:nth-child(3) {
+            left: 15px;
+            position: relative;
             font-weight: bold;
             font-size: 0.8em;
             background-color: #fbbe00;
             padding: 2px 4px;
-            margin-left: 10px;
             color: white; }
         .Destinations-group-item-right-description span {
           width: 100%;
@@ -1124,10 +1149,14 @@ https://flickity.metafizzy.co
         display: none; }
         @media (min-width: 768px) {
           .Destinations-group-item-big-arrow {
+            display: block;
             position: absolute;
             transform: translateY(-50%);
             top: 50%;
-            right: 30px; } }
+            right: 30px;
+            width: 25px;
+            height: 25px;
+            color: white; } }
         .Destinations-group-item-big-arrow a img {
           width: 16px;
           height: 16px; }
@@ -1170,7 +1199,7 @@ https://flickity.metafizzy.co
       .Support-items-item-main-title span {
         display: inline-block; }
       .Support-items-item-main-title-number {
-        font-size: 2em;
+        font-size: 2.3em;
         color: #01acee; }
       .Support-items-item-main-title-text {
         font-size: 16px;
@@ -1188,7 +1217,7 @@ https://flickity.metafizzy.co
 .Discover {
   margin-top: 80px; }
   .Discover-title {
-    font-size: 2em;
+    font-size: 2.3em;
     text-align: center;
     color: #083b87; }
   .Discover-items {
@@ -1421,7 +1450,7 @@ https://flickity.metafizzy.co
       padding-top: 100px;
       padding-bottom: 100px; } }
   .Signup-title {
-    font-size: 2em; }
+    font-size: 2.3em; }
     @media (min-width: 768px) {
       .Signup-title {
         font-size: 2.5em; } }
