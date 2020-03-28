@@ -657,6 +657,14 @@
           }
         }
         &-description {
+          &-arrow {
+            width: 18px;
+            height: 18px;
+            color: white;
+            position: absolute;
+            top: -80;
+            right: 30;
+          }
           p {
             margin-top: 15px;
             color: white;

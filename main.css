@@ -1271,6 +1271,13 @@ https://flickity.metafizzy.co
         .Discover-items-item-text-title h5 {
           font-size: 1.8em;
           color: white; }
+        .Discover-items-item-text-description-arrow {
+          width: 18px;
+          height: 18px;
+          color: white;
+          position: absolute;
+          top: -80;
+          right: 30; }
         .Discover-items-item-text-description p {
           margin-top: 15px;
           color: white;
