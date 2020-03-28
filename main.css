@@ -1367,16 +1367,22 @@ https://flickity.metafizzy.co
     line-height: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 30px; }
+    padding-right: 30px;
+    font-size: 0.9em; }
     @media (min-width: 768px) {
       .Aparthotels-button {
         width: 20%;
-        margin-top: 60px; } }
+        margin-top: 60px;
+        font-size: 16px; } }
     .Aparthotels-button-arrow {
-      position: absolute;
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%); }
+      display: none; }
+      @media (min-width: 768px) {
+        .Aparthotels-button-arrow {
+          display: block;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%); } }
       .Aparthotels-button-arrow a img {
         width: 16px;
         height: 16px; }
