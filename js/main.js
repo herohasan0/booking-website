@@ -1,4 +1,4 @@
-//////////////// Header func ////////////////
+//////////////// Header section func ////////////////
 
 $('.Header-switch').on('click', function() {
   if ($('Header').is('.menu-show')) {
@@ -8,13 +8,15 @@ $('.Header-switch').on('click', function() {
   }
 });
 
-//////////////// Navigation func ////////////////
+//////////////// Navigation section func ////////////////
 
 $('.Navigation-item').on('click', function() {
   var item = $(this);
   $('.Navigation-item').removeClass('active');
   item.addClass('active');
 });
+
+//////////////// Highlights section func ////////////////
 
 $('.Highlights-item-extra-content-button').on('click', function() {
   alert('You will see some properties in here !');
@@ -50,8 +52,30 @@ $carousel.on('staticClick.flickity', function(
   $carousel.flickity('select', cellIndex);
 });
 
-$($('.Advantages-boxes-box')).on('click', function() {
+//////////////// Advantages section func ////////////////
+
+$('.Advantages-boxes-box').on('click', function() {
   var click = $(this);
   $('.Advantages-boxes-box').removeClass('add-shadow');
   click.addClass('add-shadow');
+});
+
+//////////////// Wheretostay section func ////////////////
+
+$('.Wheretostay-content-buttons-button').on('click', function() {
+  var item = $(this);
+  $('.Wheretostay-content-buttons-button').removeClass(
+    'button wheretostay-button'
+  );
+  item.addClass('button wheretostay-button');
+});
+
+//////////////// Recommendation section func ////////////////
+
+$('.Recommendation-content-buttons-button').on('click', function() {
+  var item = $(this);
+  $('.Recommendation-content-buttons-button').removeClass(
+    'button wheretostay-button'
+  );
+  item.addClass('button wheretostay-button');
 });
