@@ -558,19 +558,18 @@
       }
       &-title {
         font-weight: bold;
-        width: 50%;
         span:first-child {
           margin-bottom: 8px;
         }
         span {
-          display: inline-block;
+          display: block;
         }
         &-number {
           font-size: $font-size-big;
           color: $color-blue;
         }
         &-text {
-          font-size: $font-size;
+          font-size: 25px;
           color: $color-navy;
         }
       }
@@ -579,10 +578,14 @@
         line-height: 1.4;
         font-size: $font-size-small;
         color: $color-soft-white;
+        width: 90%;
+        span {
+          color: $color-blue;
+          text-decoration: underline;
+        }
         @include mq('tablet') {
           width: 80%;
         }
-        width: 90%;
       }
     }
   }
