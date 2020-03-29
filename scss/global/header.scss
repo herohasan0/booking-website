@@ -18,7 +18,11 @@
     position: relative;
     left: 10px;
     margin-left: auto;
-    @include mq {
+    .icon-menu {
+      width: 24px;
+      height: 24px;
+    }
+    @include mq('tablet') {
       display: none;
     }
   }
@@ -32,8 +36,8 @@
     transition: 0.2s;
     opacity: 0;
     display: flex;
-    padding-left: $gutter;
-    padding-right: $gutter;
+    padding-left: $gap;
+    padding-right: $gap;
     padding-bottom: 20px;
     flex-direction: column;
     box-shadow: 0 30px 30px rgba(black, 0.1);

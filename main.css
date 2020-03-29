@@ -9,6 +9,12 @@ body {
   padding-left: 20px;
   padding-right: 20px; }
 
+input {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
 button,
 label,
 small {
@@ -524,6 +530,9 @@ td {
     position: relative;
     left: 10px;
     margin-left: auto; }
+    .Header-switch .icon-menu {
+      width: 24px;
+      height: 24px; }
     @media (min-width: 768px) {
       .Header-switch {
         display: none; } }
@@ -537,8 +546,8 @@ td {
     transition: 0.2s;
     opacity: 0;
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
     flex-direction: column;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
@@ -892,18 +901,17 @@ https://flickity.metafizzy.co
       font-size: 3.5em;
       margin-top: 50px; } }
   .Showcase-subtitle {
-    margin-top: 20px; }
+    margin-top: 30px; }
     @media (min-width: 768px) {
       .Showcase-subtitle {
-        font-size: 1.2em;
-        margin-top: 40px; } }
+        font-size: 1.2em; } }
   .Showcase-subtitles {
     display: none; }
     @media (min-width: 768px) {
       .Showcase-subtitles {
         display: block;
         width: 100%;
-        margin-top: 40px; } }
+        margin-top: 30px; } }
     .Showcase-subtitles-item {
       color: inherit;
       font-size: 0.9em; }
@@ -925,8 +933,8 @@ https://flickity.metafizzy.co
       margin-right: 5px;
       margin-left: 5px;
       height: 45px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
       background-color: rgba(0, 0, 0, 0.15);
       border-radius: 3px; }
       @media (min-width: 768px) {
@@ -951,7 +959,6 @@ https://flickity.metafizzy.co
   font-size: 0.9em; }
   @media (min-width: 768px) {
     .Search {
-      margin-top: 30px;
       margin-left: 100px;
       margin-right: 100px;
       padding-left: 60px;
@@ -1118,7 +1125,7 @@ https://flickity.metafizzy.co
   @media (min-width: 768px) {
     .Advantages-boxes {
       flex-direction: row;
-      margin-top: 50px; } }
+      margin-top: 80px; } }
   .Advantages-boxes-box {
     padding: 35px; }
     @media (min-width: 768px) {
@@ -1152,7 +1159,7 @@ https://flickity.metafizzy.co
         color: #01acee; }
     @media (min-width: 768px) {
       .Advantages-boxes-box + .Advantages-boxes-box {
-        margin-left: 20px; } }
+        margin-left: 30px; } }
 
 .Destinations {
   margin-top: 60px; }
@@ -1323,7 +1330,7 @@ https://flickity.metafizzy.co
         font-size: 25px;
         color: #083b87; }
     .Support-items-item-main-description {
-      margin-top: 20px;
+      margin-top: 30px;
       line-height: 1.4;
       font-size: 0.9em;
       color: #afafaf;
@@ -1491,7 +1498,7 @@ https://flickity.metafizzy.co
     @media (min-width: 768px) {
       .Aparthotels-button {
         width: 20%;
-        margin-top: 60px;
+        margin-top: 80px;
         font-size: 16px; } }
     .Aparthotels-button-arrow {
       display: none; }
@@ -1512,7 +1519,7 @@ https://flickity.metafizzy.co
   border-top: 1px solid transparent; }
   @media (min-width: 768px) {
     .Wheretostay {
-      margin-top: 100px; } }
+      margin-top: 80px; } }
   @media (min-width: 768px) {
     .Wheretostay:before {
       content: '';
@@ -1555,7 +1562,7 @@ https://flickity.metafizzy.co
       .Wheretostay-content-buttons-button {
         font-size: 0.8em; }
         .Wheretostay-content-buttons-button + .Wheretostay-content-buttons-button {
-          margin-left: 20px; }
+          margin-left: 30px; }
         @media (min-width: 768px) {
           .Wheretostay-content-buttons-button {
             font-size: 0.9em; } }
@@ -1629,7 +1636,7 @@ https://flickity.metafizzy.co
   .Signup-checkboxarea {
     justify-content: center;
     display: inline-flex;
-    margin-top: 20px; }
+    margin-top: 30px; }
     .Signup-checkboxarea:before {
       content: '';
       width: 14px;
@@ -1655,7 +1662,7 @@ https://flickity.metafizzy.co
   cursor: pointer;
   font-size: 0.8em; }
   .Recommendation-content-buttons-button + .Recommendation-content-buttons-button {
-    margin-left: 20px; }
+    margin-left: 30px; }
   @media (min-width: 768px) {
     .Recommendation-content-buttons-button {
       font-size: 0.9em; } }
