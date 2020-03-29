@@ -3,7 +3,9 @@ section.Signup
     h3.third-title.Signup-title Save time, save money!
     p.Signup-note Sign up and we'll send the best deals to you
     .Signup-inputarea
-      input(type="mail").text.Signup-inputarea-input
+      svg.icon.icon-envelop.form-item-icon.Signup-inputarea-icon
+        use(xlink:href="#icon-envelop")
+      input(type="mail" placeholder="Your email").text.Signup-inputarea-input
       button.button.button-blue.Signup-inputarea-button Subscribe
     .checkbox.Signup-checkboxarea
       input(id="checkemail" type="checkbox").Signup-checkboxarea-input

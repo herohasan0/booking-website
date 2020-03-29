@@ -918,12 +918,28 @@
     color: $color-soft-white;
   }
   &-inputarea {
+    position: relative;
+    font-size: $font-size-small;
     margin-top: 30px;
+    &-icon {
+      left: initial;
+      top: initial;
+      transform: initial;
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 25px;
+      height: 18px;
+      @include mq('tablet') {
+        top: 48%;
+        transform: translateY(-50%);
+      }
+    }
     &-input {
       min-width: initial;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       width: 80%;
+      padding-left: 45px;
       @include mq('tablet') {
         width: 30%;
       }
@@ -965,7 +981,6 @@
   }
 }
 
-///// Recommendation
 .Recommendation {
   &-content {
     &-buttons {

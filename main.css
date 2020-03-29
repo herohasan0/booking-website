@@ -1478,12 +1478,27 @@ https://flickity.metafizzy.co
     margin-top: 20px;
     color: #afafaf; }
   .Signup-inputarea {
+    position: relative;
+    font-size: 0.9em;
     margin-top: 30px; }
+    .Signup-inputarea-icon {
+      left: initial;
+      top: initial;
+      transform: initial;
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 25px;
+      height: 18px; }
+      @media (min-width: 768px) {
+        .Signup-inputarea-icon {
+          top: 48%;
+          transform: translateY(-50%); } }
     .Signup-inputarea-input {
       min-width: initial;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-      width: 80%; }
+      width: 80%;
+      padding-left: 45px; }
       @media (min-width: 768px) {
         .Signup-inputarea-input {
           width: 30%; } }
