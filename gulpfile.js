@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const nodemon = require('gulp-nodemon');
 const prefix = require('gulp-autoprefixer');
 const pug = require('gulp-pug');
 const reload = browserSync.reload;
