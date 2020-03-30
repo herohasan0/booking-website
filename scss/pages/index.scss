@@ -859,9 +859,9 @@
         font-weight: initial;
       }
       &-button {
-        & + & {
-          margin-left: $gap;
-        }
+        width: 180px;
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: $font-size-small-mobile;
         @include mq('tablet') {
           font-size: $font-size-small;
@@ -871,14 +871,20 @@
     &-reviews {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       margin-top: $gap;
+      justify-content: center;
       &-review {
+        width: 150px;
         margin-top: $gap;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: $font-size-small-mobile;
+
         @include mq('tablet') {
-          margin-right: 50px;
           margin-top: 50px;
+          margin-left: $gap;
+          margin-right: $gap;
+          font-size: $font-size-small;
         }
         &-title {
           color: $color-navy;
@@ -982,13 +988,14 @@
   &-content {
     &-buttons {
       &-button {
+        width: 140px;
         cursor: pointer;
-        & + & {
-          margin-left: $gap;
-        }
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: $font-size-small-mobile;
         @include mq('tablet') {
           font-size: $font-size-small;
+          width: 155px;
         }
       }
     }
